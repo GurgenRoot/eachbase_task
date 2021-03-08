@@ -1,0 +1,38 @@
+.input-container {
+  max-width: 60%;
+  margin: 20px auto;
+
+  &_wrapper {
+    display: flex;
+  }
+  &_input {
+    height: 40px;
+    width: 95%;
+    outline: none;
+    border: 1px solid #1890ff;
+
+  }
+
+  &_btn {
+    background: #1890ff;
+    color: #fff;
+    border: 1px solid #1890ff;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 0 2px 2px 0;
+    outline: none;
+  }
+  &_btn:active {
+    background: darken(#1890ff,11%);
+  }
+}
+
+
+.error-text {
+  color: #f5222d;
+  background-color: #fff1f0;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 50%;
+  margin: 0 auto;
+}

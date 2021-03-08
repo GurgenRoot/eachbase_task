@@ -1,0 +1,22 @@
+.task-item {
+  text-align: left;
+  margin-left: 8px;
+  display: flex;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.info-color {
+  color: #1890ff;
+}
+
+.success-color {
+  color: #28a745;
+}
+
+.completed-task {
+  text-decoration: line-through;
+}

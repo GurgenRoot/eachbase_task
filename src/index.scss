@@ -1,0 +1,115 @@
+@import '~antd/dist/antd.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btns {
+  margin-left: 8px;
+}
+
+.bor {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.col-test {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-df {
+  display: flex;
+}
+
+.my-anime  {
+  animation: anime .5s;
+}
+.my-anime2  {
+  animation: anime-rev .5s;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+@keyframes anime {
+  from {
+    margin-top: -100px;
+    //transform: rotate(0deg);
+  }
+  to {
+    margin-top: 0;
+    //transform: rotate(360deg);
+  }
+}
+
+@keyframes anime-rev {
+  from {
+    margin-top: 0;
+    //transform: rotate(0deg);
+  }
+  to {
+    margin-top: -100px;
+    //transform: rotate(360deg);
+  }
+}
+
+.my-edit_anime {
+  animation: edit-anime .5s;
+}
+
+@keyframes edit-anime {
+  from {
+    margin-bottom: -150px;
+    //transform: rotate(0deg);
+  }
+  to {
+    margin-bottom: 0;
+    //transform: rotate(360deg);
+  }
+}
+
+
+.list-animate {
+  animation: li-anime .5s;
+}
+
+@keyframes li-anime {
+  from {
+    margin-left: -150px;
+    //transform: rotate(0deg);
+  }
+  to {
+    margin-left: 0;
+    //transform: rotate(360deg);
+  }
+}
+
+.btn-group-animate {
+  animation: btn-group-anime .6s;
+}
+
+@keyframes btn-group-anime {
+  from {
+    margin-right: -250px;
+    //transform: rotate(0deg);
+  }
+  to {
+    margin-right: 0;
+    //transform: rotate(-360deg);
+  }
+}

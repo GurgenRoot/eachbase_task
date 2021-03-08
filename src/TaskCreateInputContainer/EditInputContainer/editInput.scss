@@ -1,0 +1,26 @@
+.edit-input-container {
+  max-width: 100%;
+
+  &_wrapper {
+    display: flex;
+  }
+  &_input {
+    width: 95%;
+    outline: none;
+    border: 1px solid #1890ff;
+
+  }
+
+  &_btn {
+    background: #1890ff;
+    color: #fff;
+    border: 1px solid #1890ff;
+    padding: 0 10px;
+    outline: none;
+    border-radius: 0 2px 2px 0;
+  }
+  &_btn:active {
+    background: darken(#1890ff,11%);
+  }
+}
+

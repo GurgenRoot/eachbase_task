@@ -1,0 +1,21 @@
+.App {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 51.66%;
+  height: 100vh;
+  border: 3px solid #ff4d4f;
+  overflow: hidden;
+}
+
+.layout {
+  width: 100%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
