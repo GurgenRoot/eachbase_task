@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {Divider, List, Pagination} from 'antd';
+import {Divider, List} from 'antd';
 import {useSelector} from 'react-redux';
 
 import ListButtonsGroup from '../Buttons/ListButtonsGroup';

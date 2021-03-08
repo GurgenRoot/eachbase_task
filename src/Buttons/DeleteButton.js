@@ -1,9 +1,12 @@
 import React from "react";
 
 import {Popconfirm, message, Button} from 'antd';
+
 import {useDispatch} from 'react-redux';
 
-export const DeleteButton = ({deleteTaskThunk,taskId}) => {
+import {deleteTaskThunk} from '../store/createTaskReducer';
+
+export const DeleteButton = ({taskId}) => {
     const dispatch = useDispatch()
     const confirm = () => {
         dispatch(deleteTaskThunk(taskId))

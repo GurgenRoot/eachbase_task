@@ -10,7 +10,7 @@ export const Header = ({tasks}) => {
     });
     const completedTasksCount = task.filter(completedTask => completedTask !== undefined)
     return(
-        <div>
+        <>
             <div className='wrapper'>
                 Completed - <div className='letter'>0</div>
                             <div className='letter'>{tasks.length}</div>
@@ -18,6 +18,6 @@ export const Header = ({tasks}) => {
                             <div className='letter'>0</div>
                             <div className='letter'>{completedTasksCount.length} </div>
             </div>
-        </div>
+        </>
     )
 };

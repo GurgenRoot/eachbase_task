@@ -69,6 +69,15 @@ export const deleteTaskThunk = (id) => {
     }
 }
 
+export const deleteAllTaskThunk = () => {
+    return async (dispatch) => {
+        const response = await aboutTask.deleteAllTask()
+        if (response.status === 200) {
+            dispatch(getTasksThunk())
+        }
+    }
+}
+
 export const completeTaskThunk = (id,completed = true) => {
     return async (dispatch) => {
         const response = await aboutTask.completeTask(id,completed)

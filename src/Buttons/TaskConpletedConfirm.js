@@ -2,12 +2,14 @@ import React from 'react';
 
 import {Popconfirm, message, Popover} from 'antd';
 import CheckCircleOutlined from '@ant-design/icons/lib/icons/CheckCircleOutlined';
+import {useDispatch} from 'react-redux';
+import {completeTaskThunk} from '../store/createTaskReducer';
 
-export const TaskCompletedConfirm = ({completeTaskThunk, task}) => {
-
+export const TaskCompletedConfirm = ({task}) => {
+    const dispatch = useDispatch()
     const confirm = () => {
         if (!task.completed) {
-            completeTaskThunk(task.id);
+            dispatch(completeTaskThunk(task.id))
             message.success('Completed!');
         }
     };
